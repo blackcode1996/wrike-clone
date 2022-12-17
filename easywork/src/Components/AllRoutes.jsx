@@ -6,6 +6,7 @@ import LoginInPage from "../Pages/LoginInPage";
 import PanelPage from "../Pages/PanelPage";
 import PricingPage from "../Pages/PricingPage";
 import SignUpPage from "../Pages/SignUpPage";
+import NotFound from "../Pages/NotFoundPage";
 
 const AllRoutes=()=>{
     return (
@@ -17,6 +18,7 @@ const AllRoutes=()=>{
             <Route path="/pricing" element={<PricingPage />}></Route>
             <Route path="/contact" element={<ContactPage />}></Route>
             <Route path="/panel" element={<PanelPage />}></Route>
+            <Route path="*" element={<NotFound/>}></Route>
         </Routes>
     </div>
     )
