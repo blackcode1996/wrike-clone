@@ -30,7 +30,7 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box pos="fixed" top="0" w="100%" border="0px solid red">
+      <Box pos="fixed" top="0" zIndex="2" w="100%" border="0px solid red">
         <Flex
           bg={useColorModeValue('#181f38')}
           color={useColorModeValue('gray.600', 'white')}
