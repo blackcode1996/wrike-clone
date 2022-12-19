@@ -7,7 +7,6 @@ import {
     Stack,
     Collapse,
     Icon,
-    Link,
     Popover,
     PopoverTrigger,
     PopoverContent,
@@ -15,8 +14,10 @@ import {
     useBreakpointValue,
     useDisclosure,
     Image,
-    Grid
+    Grid,
+    background,
   } from '@chakra-ui/react';
+  import {Link} from "react-router-dom";
   import {
     HamburgerIcon,
     CloseIcon,
@@ -32,14 +33,14 @@ import {
     return (
       <Box pos="fixed" top="0" zIndex="2" w="100%" border="0px solid red">
         <Flex
-          bg={useColorModeValue('#181f38')}
-          color={useColorModeValue('gray.600', 'white')}
-          minH={'20px'}
+          bg='#181f38'
+          color= '#fff'
+          minH={'30px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={0}
-          borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.900')}
+        //   borderStyle={'solid'}
+        //   borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}>
           <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -73,28 +74,31 @@ import {
               fontWeight={500}
               color={'#08cf65'}
               variant={'link'}
-              href={'#'}
+              href={'/login'}
               _hover={{
                 color: "#fff",
               }}>
               Log In
             </Button>
-            <Button
-             padding="35px"
-             style={{ fontSize: "17px" }}
-             display={{ base: "none", md: "inline-flex" }}
-             fontSize={"sm"}
-             fontWeight={600}
-             color={"white"}
-             bg={"#08cf65"}
-             href={"#"}
-             _hover={{
-               bg: "white",
-               color: "black",
-             }}
-           >
-            Start for free
-          </Button>
+            <Link to="/getstarted">
+                <Button
+                    href={"/signin"}
+                    textDecoration={"none"}
+                    padding="35px"
+                    style={{ fontSize: "17px" }}
+                    display={{ base: "none", md: "inline-flex" }}
+                    fontSize={"sm"}
+                    fontWeight={600}
+                    color={"white"}
+                    bg={"#08cf65"}
+                    _hover={{
+                    bg: "white",
+                    color: "black",
+                }}
+                >
+                Start for free
+                </Button>
+          </Link>
           </Stack>
           
         </Flex>
@@ -114,7 +118,7 @@ import {
     return (
       <Stack   direction={'row'} spacing={5}>
         {NAV_ITEMS.map((navItem) => (
-          <Box key={navItem.label} style={{display:"flex",height:"90px"}}>
+          <Box key={navItem.label} style={{display:"flex",height:"100px"}}>
             <Popover trigger={'hover'} placement={'bottom-start'}  >
               <PopoverTrigger >
                 <Link
@@ -139,13 +143,13 @@ import {
                 <PopoverContent
                   border={0}
                   boxShadow={'xl'}
-                  bg={popoverContentBgColor}
+                  bg={"#181f38"}
                   p={4}
                   rounded={'xl'}
                   minW={'sm'}>
-                  <Box gap={3}>
+                  <Box gap={5} >
                     {navItem.children.map((child) => (
-                      <DesktopSubNav key={child.label} {...child} />
+                      <DesktopSubNav  key={child.label} {...child} />
                     ))}
                   </Box>
                 </PopoverContent>
@@ -163,19 +167,20 @@ import {
         href={href}
         role={'group'}
         display={'block'}
-        p={2}
+        p={5}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('#08cf65') }}>
-        <Stack direction={'row'} align={'center'}>
+        >
+        <Stack fontWeight={"200"} direction={'row'} align={'center'} _hover={{bgColor:"#08cf65", borderRadius:"10px"}} >
           <Box>
             <Text
               style={{color:"white"}}
-              transition={'all .4s ease'}
-              _groupHover={{ color: '#08cf65' }}
-              fontWeight={100}>
+              transition={'all .5s ease'}
+              _hover={{ color: '#08cf65' }}
+              fontWeight={"300"}
+              marginBottom={"10px"}>
               {label}
             </Text>
-            <Text fontSize={'sm'}>{subLabel}</Text>
+            <Text  marginBottom={"5px"} fontSize={'sm'} color={"gray.500"}>{subLabel}</Text>
           </Box>
           <Flex
             transition={'all .3s ease'}
@@ -343,6 +348,6 @@ import {
     },
     {
       label: 'Pricing',
-      href: '#',
+      href: '/pricing',
     },
   ];

@@ -29,6 +29,7 @@ import Wave from "react-wavify";
 import React, { useState } from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
 import App from "../App";
+import Footer from "../Components/Footer";
 
 // import Head from 'next/head';
 
@@ -1215,10 +1216,10 @@ export default function HomePage() {
                 integrations for more advanced users.
               </Text>
             </Box>
+            <SimpleGrid justifyContent={"center"} alignItems={"center"}>
             <SimpleGrid
-                ml={"15%"}
                 w="max-content"
-                spacing={4}
+                spacing={8}
                 templateColumns="repeat(3, minmax(200px, 1fr))"
                 templateRows={"auto"}
             >
@@ -1295,6 +1296,7 @@ export default function HomePage() {
                 </CardBody>
               </Card>
             </SimpleGrid>
+            </SimpleGrid>
             <Button
                 mt={"80px"}
                 variant={"link"}
@@ -1316,6 +1318,7 @@ export default function HomePage() {
                 />
               </Button>
           </Box>
+          <Footer/>
         </Box>
       </Box>
     </Box>
