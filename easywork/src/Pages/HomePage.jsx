@@ -571,13 +571,13 @@ export default function HomePage() {
           fill="#0c3245"
           paused="true"
           options={{
-            height: 10,
+            height: 40,
             amplitude: 50,
             speed: 0.5,
             points: 2,
           }}
         />
-        <Box mt={"-7px"} h={"1300px"} w={"100%"} bgColor={"#0c3245"}>
+        <Box mt={"-7px"} h={"1250px"} w={"100%"} bgColor={"#0c3245"}>
           <Heading
             color={"#fff"}
             mb={"30px"}
