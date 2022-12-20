@@ -19,7 +19,9 @@ import {
   } from '@chakra-ui/react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { BiMailSend } from 'react-icons/bi';
-  import logo from "../Utilities/logo.jpg"
+  // import logo from "../Utilities/logo.jpg"
+  import footer from "../Utilities/footer.jpg"
+
 
   const SocialButton = ({children,label,href}) => (
       <chakra.button
@@ -148,10 +150,10 @@ import {
           spacing={8}>
           <Stack spacing={6}>
             <Box>
-                <Link to={"/"}><Image src={logo} w={140}/></Link>
+                <Link to={"/"}><Image src={footer} w={140}/></Link>
             </Box>
             <Text fontSize={'sm'}>
-              © 2022 Chakra Templates. All rights reserved
+              © 2022 Easywork(Aakash Mukherjee). All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'#'}>
