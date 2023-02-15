@@ -4,8 +4,8 @@
 Easywork is a clone of wrike which is an American project management application service provider and I have cloned it in 4 days with the use of various techstacks.
 
 ## Features
-*sign in and login using google firebase 
-*React waivy package for better UI.
+* sign in and login using google firebase 
+* React waivy package for better UI.
 
 Here is the deployed link :- [Easywork](https://crooked-van-1224-vwst.vercel.app/)
 
