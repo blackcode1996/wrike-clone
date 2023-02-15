@@ -11,6 +11,7 @@ Here is the deployed link :- [Easywork](https://crooked-van-1224-vwst.vercel.app
 
 ## Tech Stack Used
 * React
+* Chakra UI
 * CSS
 * Javascript
 * Firebase
