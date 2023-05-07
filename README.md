@@ -16,7 +16,7 @@ Here is the deployed link :- [Easywork](https://crooked-van-1224-vwst.vercel.app
 * Javascript
 * Firebase
 
-## Below are some of the Screenshots with features of the site:
+## Below are some of the Screenshots of the site:
 ![Screenshot 2023-02-15 130324](https://user-images.githubusercontent.com/110044436/218962639-99b2dd49-26cf-4149-b8c9-6d25b037bd3e.png)
 ![Screenshot 2023-02-15 130408](https://user-images.githubusercontent.com/110044436/218962692-d96ed7ba-3138-46f4-ae79-3f0769010df0.png)
 ![Screenshot 2023-02-15 130448](https://user-images.githubusercontent.com/110044436/218962703-57e39190-98e3-4083-9698-44085c89d25b.png)
